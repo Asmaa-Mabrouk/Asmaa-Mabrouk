@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+    <link rel="stylesheet" href="style/all.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container"> 
+    <h1 id="demo" class="m-auto my-5">Bookmarker</h1>
+    <hr>
+    <h2 class="text-center">
+      <i class="fa-solid fa-bookmark"> </i>  Bookmark your favorite sites 
+            <i class="fa-solid fa-bookmark" ></i>
+    </h2>
+      
+        <div class="form-group">
+          <label for="siteName" class="pb-2 fw-semibold"> <i class="fa-solid fa-book-bookmark pe-2"></i>Site Name</label>
+          <input type="text" placeholder="Bookmark Name" class="form-control" id="siteName" aria-describedby="emailHelp" placeholder="Enter email">
+        </div>
+        <div class="form-group">
+          <label for="siteUrl" class="pb-2 fw-semibold"> <i class="fa-solid fa-link pe-2"></i>Site URL</label>
+          <input type="text" placeholder="Website URL" class="form-control" id="siteUrl" placeholder="Password">
+        </div>
+        <button  class="btn btn-submit px-5 my-3 d-block" id ="submitBtn">Submit</button>
+        <button  class="btn btn-warning px-5 my-3 d-none" id ="updateBtn" onclick="submitUpdate()">Update</button>
+   
+      <hr>
+<div class="search py-3">
+<input id="search" type="search" class="form-control" placeholder="Search By Site Name">
+</div>    
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Index</th>
+            <th scope="col">Website Name</th>
+            <th scope="col">Visit</th>
+            <th scope="col">Edit</th>
+            <th scope="col">Delete</th>
+          </tr>
+        </thead>
+        <tbody id="tBody">
+          
+        </tbody>
+      </table>
+
+    </div> 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script/main.js"></script>
+
+  </body>
+</html>
